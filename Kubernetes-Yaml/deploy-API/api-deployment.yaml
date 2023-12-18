@@ -1,0 +1,26 @@
+piVersion: apps/v1
+kind: Deployment
+metadata:
+  name: modality-api-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: modality-api
+  template:
+    metadata:
+      labels:
+        app: modality-api
+    spec:
+      containers:
+      - name: modality-api
+        image: <docker-repo>/<image-name>
+        ports:
+        - containerPort: <port>
+        env:
+        - name: SQLSERVER_CONNECTION_STRING
+          valueFrom:
+            secretKeyRef:
+              name: sql-secret
+              key: SQLSERVER_CONNECTION_STRING
+        imagePullPolicy: IfNotPresent
