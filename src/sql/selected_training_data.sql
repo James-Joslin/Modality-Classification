@@ -52,6 +52,7 @@ filtered_data AS (
 )
 SELECT
     client_key,
+    referral_source_general,
     unique_referral_index,
     merged_referral_index,
     first_core10_bracket,

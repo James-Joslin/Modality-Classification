@@ -1,40 +1,42 @@
 CREATE TABLE referral_source_lookup (
-    category_name VARCHAR(255),
-    unique_category_index INT,
-    merged_category_index INT
+    referral_name VARCHAR(255),
+    unique_referral_index INT,
+    merged_referral_index INT
 );
 
 -- Insert categories with the merged index
-INSERT INTO referral_source_lookup (category_name, unique_category_index, merged_category_index)
+INSERT INTO referral_source_lookup (referral_name, unique_referral_index, merged_referral_index)
 VALUES
-('GP', 1, 1),
-('Health Visitor', 2, 1),
-('Mental Health NHS Trust', 3, 1),
-('Other Primary Health Care', 4, 1),
-('Independent Sector Mental Health Services', 5, 1),
-('Accident And Emergency Department', 6, 1),
-('Drug Action Team / Drug Misuse Agency', 7, 1),
-('Courts', 8, 2),
-('Police', 9, 2),
-('Probation Service', 10, 2),
-('Court Liaison and Diversion Service', 11, 2),
-('Prison', 12, 2),
-('Social Services', 13, 3),
-('Carer', 14, 3),
-('Education Service', 15, 3),
-('GamCare/partner network', 16, 3),
-('Citizen’s Advice', 17, 3),
-('Jobcentre plus', 18, 3),
-('Self-Referral', 19, 4),
-('National Gambling Helpline', 20, 4),
-('London Problem Gambling Clinic / CNWL', 21, 4),
-('Northern Gambling Service / LYPFT', 22, 4),
-('Primary Care Gambling Service (PCGS)', 23, 4),
-('Gordon Moody Association (GMA)', 24, 4),
-('Not known or declined response', 25, 5),
-('Not stated', 26, 5),
-(NULL, 27, 5),
-('Other service or agency', 28, 5);
+('GP', 0, 0),
+('Health Visitor', 1, 0),
+('Mental Health NHS Trust', 2, 0),
+('Other Primary Health Care', 3, 0),
+('Independent Sector Mental Health Services', 4, 0),
+('Accident And Emergency Department', 5, 0),
+('Drug Action Team / Drug Misuse Agency', 6, 0),
+('Courts', 7, 1),
+('Police', 8, 1),
+('Probation Service', 9, 1),
+('Court Liaison and Diversion Service', 10, 1),
+('Prison', 11, 1),
+('Social Services', 12, 2),
+('Carer', 13, 2),
+('Voluntary Sector', 14, 2),
+('Education Service', 15, 2),
+('GamCare/partner network', 16, 2),
+('Citizen’s Advice', 17, 2),
+('Jobcentre plus', 18, 2),
+('Self-Referral', 19, 3),
+('National Gambling Helpline', 20, 3),
+('London Problem Gambling Clinic / CNWL', 21, 3),
+('Northern Gambling Service / LYPFT', 22, 3),
+('Primary Care Gambling Service (PCGS)', 23, 3),
+('Gordon Moody Association (GMA)', 24, 3),
+('Employer', 25, 4),
+('Not known or declined response', 26, 4),
+('Not stated', 27, 4),
+('Other service or agency', 28, 4),
+(NULL, 29, 4);
 
 -- PREVIOUS METHOD LEFT FOR TRANSPARENCY
 -- CREATE TABLE referral_source_lookup (

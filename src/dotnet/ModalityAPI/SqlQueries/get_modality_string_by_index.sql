@@ -1,0 +1,1 @@
+SELECT first_element FROM initial_modality_lookup WHERE element_id = @elementId;
