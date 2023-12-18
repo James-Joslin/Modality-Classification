@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jjoslin/Modality-Classification/src/dotnet/ModalityAPI/ModalityAPI.csproj": {}
+  },
+  "projects": {
+    "/home/jjoslin/Modality-Classification/src/dotnet/ModalityAPI/ModalityAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jjoslin/Modality-Classification/src/dotnet/ModalityAPI/ModalityAPI.csproj",
+        "projectName": "ModalityAPI",
+        "projectPath": "/home/jjoslin/Modality-Classification/src/dotnet/ModalityAPI/ModalityAPI.csproj",
+        "packagesPath": "/home/jjoslin/.nuget/packages/",
+        "outputPath": "/home/jjoslin/Modality-Classification/src/dotnet/ModalityAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jjoslin/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.ML.OnnxRuntime": {
+              "target": "Package",
+              "version": "[1.16.3, )"
+            },
+            "Microsoft.ML.OnnxTransformer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            },
+            "System.Numerics.Tensors": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

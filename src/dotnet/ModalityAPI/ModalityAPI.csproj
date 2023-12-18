@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Libraries -->
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.14" />
+    <PackageReference Include="Microsoft.ML" Version="3.0.0" />
+    <PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.16.3" />
+    <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="3.0.0" />
+    <PackageReference Include="Npgsql" Version="8.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.Numerics.Tensors" Version="8.0.0" />
+    <!-- Files -->
+    <None Update="Models/bracketClassifier.onnx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Models/modalityClassifier.onnx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="SqlQueries/minimax_metrics.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="SqlQueries/get_modality_string_by_index.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9CDF78F4-AE3D-4DDD-A1F4-ABA929B37DD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{0F9CF1B6-890D-4673-BAD8-BD972D8B6498}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModalityAPI", "src\dotnet\ModalityAPI\ModalityAPI.csproj", "{74DB0C8A-ECCB-4242-9B52-BA29FE71BE88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74DB0C8A-ECCB-4242-9B52-BA29FE71BE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DB0C8A-ECCB-4242-9B52-BA29FE71BE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DB0C8A-ECCB-4242-9B52-BA29FE71BE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74DB0C8A-ECCB-4242-9B52-BA29FE71BE88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0F9CF1B6-890D-4673-BAD8-BD972D8B6498} = {9CDF78F4-AE3D-4DDD-A1F4-ABA929B37DD9}
+		{74DB0C8A-ECCB-4242-9B52-BA29FE71BE88} = {0F9CF1B6-890D-4673-BAD8-BD972D8B6498}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33052124-E8DE-4872-8BDD-56635219EC70}
+	EndGlobalSection
+EndGlobal
