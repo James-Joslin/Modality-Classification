@@ -1,0 +1,29 @@
+GP,0
+Health Visitor,1
+Mental Health NHS Trust,2
+Other Primary Health Care,3
+Independent Sector Mental Health Services,4
+Accident And Emergency Department,5
+Drug Action Team / Drug Misuse Agency,6
+Courts,7
+Police,8
+Probation Service,9
+Court Liaison and Diversion Service,10
+Prison,11
+Social Services,12
+Carer,13
+Voluntary Sector,14
+Education Service,15
+GamCare/partner network,16
+Citizen’s Advice,17
+Jobcentre plus,18
+Self-Referral,19
+National Gambling Helpline,20
+London Problem Gambling Clinic / CNWL,21
+Northern Gambling Service / LYPFT,22
+Primary Care Gambling Service (PCGS),23
+Gordon Moody Association (GMA),24
+Employer,25
+Not known or declined response,26
+Not stated,27
+Other service or agency,28

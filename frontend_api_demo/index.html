@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API Demo</title>
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<h1>API Prediction Demo</h1>
+
+<form id="predictionForm">
+    <label for="pgsi">PGSI:</label>
+    <input type="number" id="pgsi" name="pgsi" required>
+
+    <label for="core10">CORE-10:</label>
+    <input type="number" id="core10" name="core10" required>
+
+    <label for="referralIndex">Referral Type:</label>
+    <select id="referralIndex" name="referralIndex" required></select>
+
+    <button type="submit">Predict</button>
+</form>
+
+<div id="predictionResult"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
