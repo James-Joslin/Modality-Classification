@@ -9,6 +9,7 @@ __pycache__/
 secrets.json
 
 /src/dotnet/ModalityAPI/bin/*
+/src/dotnet/ModalityAPI/obj/Debug*
 
 # Distribution / packaging
 .Python
