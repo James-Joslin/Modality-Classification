@@ -95,8 +95,8 @@ if __name__ == "__main__":
         hidden_sizes_shared=multi_classifier_config.HIDDEN_SIZES_SHARED, 
         hidden_sizes_a=multi_classifier_config.HIDDEN_SIZES_A, 
         hidden_sizes_b=multi_classifier_config.HIDDEN_SIZES_B, 
-        size_out1=4, 
-        size_out2=5, 
+        size_out1=Y_train[:, :1].max()+1, 
+        size_out2=Y_train[:, 1:].max()+1, 
         dropout_p=multi_classifier_config.DROPOUT_RATE
     ).to(multi_classifier_config.DEVICE)
     # metric_classifier.apply(model_architectures.initialize_weights) # utilise xavier uniform initialised weights
@@ -292,7 +292,7 @@ if __name__ == "__main__":
         size_in=final_x_data.shape[1],
         num_hidden=modality_classifier_config.NUM_HIDDEN,
         hidden_size=modality_classifier_config.HIDDEN_SIZE,
-        size_out=3,
+        size_out=y_res.max()+1,
         dropout_p=modality_classifier_config.DROPOUT_RATE
     ).to(modality_classifier_config.DEVICE)
     modality_classifier.apply(model_architectures.initialize_weights)
