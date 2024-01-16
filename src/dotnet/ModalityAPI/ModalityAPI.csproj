@@ -14,7 +14,7 @@
     <PackageReference Include="Microsoft.ML.OnnxTransformer" Version="3.0.0" />
     <PackageReference Include="Npgsql" Version="8.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
     <PackageReference Include="System.Numerics.Tensors" Version="8.0.0" />
     <!-- Files -->
     <None Update="Models/bracketClassifier.onnx">
